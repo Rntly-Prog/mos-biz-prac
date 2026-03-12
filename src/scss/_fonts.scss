@@ -1,0 +1,6 @@
+// все шрифты добавляются сюда
+// mixin: font-face берёт формат woff2
+// mixin: font-face-format последним значением нужно указать формат шрифта
+
+@include font-face("FuturaPT", "/FuturaPT-Book", 400, normal);
+@include font-face-format("FuturaPT", "/FuturaPT-BookObl", 400, normal, ttf);

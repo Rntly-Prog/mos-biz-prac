@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  &:not([class]) {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+html {
+  // Разблокировать при необходимости
+  // scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+// ширина экрана не зависит от скроллбара
+// при необходимости можно убрать
+@media screen and (pointer: fine) {
+  html {
+    width: 100vw;
+    margin-left: calc((100% - 100vw) / 2);
+  }
+}
+//
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  // overflow: clip;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+  padding: 0 rem(40);
+  width: 100%;
+  max-width: rem(1350);
+  margin: 0 auto;
+  height: 100%;
+
+  @media (max-width: 1024px) {
+    padding: 0 rem(16);
+  }
+}
+
+.site-container {
+  overflow-x: clip;
+  width: 100%;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  font-family: "Victor Mono", sans-serif;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.dis-scroll {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
+  overflow-x: hidden;
+
+  // тестовое св-во, чтобы не прыгала страница, если прыгает, убираем
+  overflow-y: scroll;
+}

@@ -1,0 +1,164 @@
+{
+  "header": {
+    "phone": "+7 (499) 444-16-15",
+    "email": "dpir-press@mos.ru",
+    "feedback_link": "https://www.figma.com/design/FKoI24zw5vT8h3FhVRTBj0/%D0%9C%D0%BE%D1%81%D0%91%D0%B8%D0%B7-%D0%A2%D0%95%D0%A1%D0%A2--Copy-?node-id=0-1&p=f&t=efw6LGWOPoGmrW7p-0"
+  },
+  "hero": {
+    "main_title": "Программы и инструменты для развития бизнеса",
+    "bottom_title": "от Департамента предпринимательства и инновационного развития Москвы",
+    "background_image": "http://kurmanni.beget.tech/storage/hero/01KJAYHH53DS9X21Q79APXNPXR.jpg",
+    "statistics": [
+      {
+        "value": "105 млрд ₽",
+        "label": "Направлено на поддержку"
+      },
+      {
+        "value": "1 млн",
+        "label": "Оказанных услуг"
+      },
+      {
+        "value": "250 000",
+        "label": "Поддержанных предпринимателей"
+      }
+    ]
+  },
+  "team": [
+    {
+      "name": "Кострома Кристина Геннадьевна",
+      "position": "Руководитель Департамента предпринимательства и инновационного развития города Москвы",
+      "photo": "http://kurmanni.beget.tech/storage/team/01KJAZ6MKSW847Z2FFC80D0WWN.jpg"
+    },
+    {
+      "name": "Дерюгин Александр Владимирович",
+      "position": "Заместитель руководителя Департамента",
+      "photo": "http://kurmanni.beget.tech/storage/team/01KJAZ72RP273DEE6G7DFPTPR7.jpg"
+    },
+    {
+      "name": "Серегина Варвара Владимировна",
+      "position": "Начальник Управления поддержки и развития предпринимательства",
+      "photo": "http://kurmanni.beget.tech/storage/team/01KJAZ8224422PYM9CG8GPNAB2.jpg"
+    },
+    {
+      "name": "Иванов Станислав Сергеевич",
+      "position": "Генеральный Директор ГБУ «Малый Бизнес Москвы»",
+      "photo": "http://kurmanni.beget.tech/storage/team/01KJAZ9K4HMXRDZSR482RE40H8.jpg"
+    },
+    {
+      "name": "Купринов Антон Эдуардович",
+      "position": "Исполнительный директор Фонда содействия кредитованию Малого Бизнеса Москвы",
+      "photo": "http://kurmanni.beget.tech/storage/team/01KJAZ9Y4QHMY6NYFCQQ24RQP2.jpg"
+    },
+    {
+      "name": "Байков Сергей Николаевич",
+      "position": "Начальник Управления по обеспечению деятельности Штаба по защите бизнеса и Проектного офиса в городе Москве",
+      "photo": "http://kurmanni.beget.tech/storage/team/01KJAZA9Q5T5BKM3VSQ1HJ36MT.jpg"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Московская неделя предпринимательства",
+      "description": "...",
+      "photo": "http://kurmanni.beget.tech/storage/projects/01KJAYYZB0HK1ZW61MAJ8JPQ07.jpg",
+      "link": "https://www.figma.com/design/FKoI24zw5vT8h3FhVRTBj0/%D0%9C%D0%BE%D1%81%D0%91%D0%B8%D0%B7-%D0%A2%D0%95%D0%A1%D0%A2--Copy-?node-id=1-597&t=efw6LGWOPoGmrW7p-0",
+      "link_text": "Подробнее"
+    },
+    {
+      "title": "Лидеры цифрой трансформации",
+      "description": "...",
+      "photo": "http://kurmanni.beget.tech/storage/projects/01KJAYZG5MQADJX3HR4DD2YHRG.jpg",
+      "link": "https://www.figma.com/design/FKoI24zw5vT8h3FhVRTBj0/%D0%9C%D0%BE%D1%81%D0%91%D0%B8%D0%B7-%D0%A2%D0%95%D0%A1%D0%A2--Copy-?node-id=1-597&t=efw6LGWOPoGmrW7p-0",
+      "link_text": "Подробнее"
+    },
+    {
+      "title": "Единая цифровая платформа",
+      "description": "...",
+      "photo": "http://kurmanni.beget.tech/storage/projects/01KJAZ0M124YXR2XVNVE927WZH.jpg",
+      "link": "https://www.figma.com/design/FKoI24zw5vT8h3FhVRTBj0/%D0%9C%D0%BE%D1%81%D0%91%D0%B8%D0%B7-%D0%A2%D0%95%D0%A1%D0%A2--Copy-?node-id=1-597&t=efw6LGWOPoGmrW7p-0",
+      "link_text": "Подробнее"
+    },
+    {
+      "title": "Новаторы Москвы",
+      "description": "...",
+      "photo": "http://kurmanni.beget.tech/storage/projects/01KJAZ130D9GT9B75DTRRQ47XC.jpg",
+      "link": "https://www.figma.com/design/FKoI24zw5vT8h3FhVRTBj0/%D0%9C%D0%BE%D1%81%D0%91%D0%B8%D0%B7-%D0%A2%D0%95%D0%A1%D0%A2--Copy-?node-id=1-597&t=efw6LGWOPoGmrW7p-0",
+      "link_text": "Подробнее"
+    },
+    {
+      "title": "Академия инноваторов",
+      "description": "...",
+      "photo": null,
+      "link": "https://www.figma.com/design/FKoI24zw5vT8h3FhVRTBj0/%D0%9C%D0%BE%D1%81%D0%91%D0%B8%D0%B7-%D0%A2%D0%95%D0%A1%D0%A2--Copy-?node-id=1-597&t=efw6LGWOPoGmrW7p-0",
+      "link_text": "Подробнее"
+    }
+  ],
+  "events": [
+    {
+      "title": "День без турникетов",
+      "description": "Бесплатные экскурсии для горожан на площадки высокотехнологичных предприятий. Возможность побывать в офисах крупных компаний, научных лабораториях и других интересных локациях",
+      "photo": "http://kurmanni.beget.tech/storage/events/01KJAZD67JM558V7DN02RK6GF7.jpg",
+      "start_date": "2026-05-20T00:00:00.000000Z",
+      "end_date": "2026-05-26T00:00:00.000000Z",
+      "type": "human_capital"
+    },
+    {
+      "title": "Московский предпринимательский форум",
+      "description": "Крупнейшее деловое мероприятие столицы, которое состоится на территории кластера “Ломоносов”. Форум  направлен на поддержку малого и среднего предпринимательства, призван помочь представителям компаний и стартапов найти партнеров и инвестиции, начать свое дело, а также поспособствовать обмену опытом и мнениями.",
+      "photo": "http://kurmanni.beget.tech/storage/events/01KJAZHNHDYYX863JW6T82P2FP.jpg",
+      "start_date": "2026-05-21T00:00:00.000000Z",
+      "end_date": "2026-05-24T00:00:00.000000Z",
+      "type": "entrepreneurship"
+    },
+    {
+      "title": "Московская неделя интерьера и дизайна",
+      "description": "Главное событие в индустрии интерьера и дизайна — выставочные площади и деловая программа",
+      "photo": "http://kurmanni.beget.tech/storage/events/01KJAZJXCW47ZJX9648ZQHM4EK.jpg",
+      "start_date": "2026-05-28T00:00:00.000000Z",
+      "end_date": "2026-05-28T00:00:00.000000Z",
+      "type": "innovation"
+    }
+  ],
+  "subordinate_structures": [
+    {
+      "title": "Малый бизнес Москвы",
+      "description": "Поддержка малого и среднего предпринимательства",
+      "photo": "http://kurmanni.beget.tech/storage/structures/01KJAZ2DZ289H4B8HM86HB0HZS.jpg",
+      "link": "https://www.figma.com/design/FKoI24zw5vT8h3FhVRTBj0/%D0%9C%D0%BE%D1%81%D0%91%D0%B8%D0%B7-%D0%A2%D0%95%D0%A1%D0%A2--Copy-?node-id=1-597&t=efw6LGWOPoGmrW7p-0",
+      "link_text": "Подробнее"
+    },
+    {
+      "title": "Московский инновационный кластер",
+      "description": "Внедрение инноваций\nи развитие кооперации",
+      "photo": "http://kurmanni.beget.tech/storage/structures/01KJAZ2YA5J0Y5ZB7XXR9QFX0B.jpg",
+      "link": "https://www.figma.com/design/FKoI24zw5vT8h3FhVRTBj0/%D0%9C%D0%BE%D1%81%D0%91%D0%B8%D0%B7-%D0%A2%D0%95%D0%A1%D0%A2--Copy-?node-id=1-597&t=efw6LGWOPoGmrW7p-0",
+      "link_text": "Подробнее"
+    },
+    {
+      "title": "Агентство инноваций Москвы",
+      "description": "Поддержка и развитие технологических компаний",
+      "photo": "http://kurmanni.beget.tech/storage/structures/01KJAZ3XQS6YSJJ4QR5MFBGEG0.jpg",
+      "link": "https://www.figma.com/design/FKoI24zw5vT8h3FhVRTBj0/%D0%9C%D0%BE%D1%81%D0%91%D0%B8%D0%B7-%D0%A2%D0%95%D0%A1%D0%A2--Copy-?node-id=1-597&t=efw6LGWOPoGmrW7p-0",
+      "link_text": "Подробнее"
+    },
+    {
+      "title": "Московский экспортный центр",
+      "description": "Поддержка экспортно ориентированного бизнеса",
+      "photo": "http://kurmanni.beget.tech/storage/structures/01KJAZ4FGF2MC4011B996MCKA5.jpg",
+      "link": "https://www.figma.com/design/FKoI24zw5vT8h3FhVRTBj0/%D0%9C%D0%BE%D1%81%D0%91%D0%B8%D0%B7-%D0%A2%D0%95%D0%A1%D0%A2--Copy-?node-id=1-597&t=efw6LGWOPoGmrW7p-0",
+      "link_text": "Подробнее"
+    },
+    {
+      "title": "Развитие человеческого капитала",
+      "description": "Инфраструктура для развития команды и кадров",
+      "photo": "http://kurmanni.beget.tech/storage/structures/01KJAZ549TZSDRJ379604STKA4.jpg",
+      "link": "https://www.figma.com/design/FKoI24zw5vT8h3FhVRTBj0/%D0%9C%D0%BE%D1%81%D0%91%D0%B8%D0%B7-%D0%A2%D0%95%D0%A1%D0%A2--Copy-?node-id=1-597&t=efw6LGWOPoGmrW7p-0",
+      "link_text": "Подробнее"
+    }
+  ],
+  "footer": {
+    "email": "dpir-press@mos.ru",
+    "address": "125009, г. Москва, Романов переулок, д. 4 стр. 2",
+    "privacy_policy_link": "https://www.figma.com/design/FKoI24zw5vT8h3FhVRTBj0/%D0%9C%D0%BE%D1%81%D0%91%D0%B8%D0%B7-%D0%A2%D0%95%D0%A1%D0%A2--Copy-?node-id=0-1&p=f&t=efw6LGWOPoGmrW7p-0",
+    "newsletter_link": "https://www.figma.com/design/FKoI24zw5vT8h3FhVRTBj0/%D0%9C%D0%BE%D1%81%D0%91%D0%B8%D0%B7-%D0%A2%D0%95%D0%A1%D0%A2--Copy-?node-id=0-1&p=f&t=efw6LGWOPoGmrW7p-0"
+  }
+}

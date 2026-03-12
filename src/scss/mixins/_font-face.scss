@@ -1,0 +1,21 @@
+/* stylelint-disable */
+@mixin font-face($font-family, $url, $weight, $style) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("../fonts/#{$url}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-display: block;
+    font-style: $style;
+  }
+}
+
+// добавление font-face своего формата
+@mixin font-face-format($font-family, $url, $weight, $style, $format) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("../fonts/#{$url}.#{$format}");
+    font-weight: #{$weight};
+    font-display: block;
+    font-style: $style;
+  }
+}

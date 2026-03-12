@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru" class="page" data-api-url="api.json">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  @include('partials/header.html')
+  <div class="site-container">
+    <main class="main">
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__bg">
+            <!-- Картинка -->
+            <img src="" alt="" class="hero__img" data-hero-image data-hero-fallback="img/hero-bg.jpg">
+
+            <!-- Текст -->
+            <div class="hero__content">
+              <h1 class="hero__title" data-hero-title></h1>
+              <p class="hero__subtitle" data-hero-subtitle></p>
+            </div>
+
+            <!-- Карточки -->
+            <div class="hero__cards" data-hero-cards></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--team" id="team">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Команда Департамента</h2>
+          </div>
+          <div class="grid team__grid" data-team-list></div>
+        </div>
+      </section>
+
+      <section class="section section--structures" id="structures">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Подведомственные структуры</h2>
+          </div>
+          <div class="grid structures__grid" data-structures-list></div>
+        </div>
+      </section>
+
+      <section class="section section--projects" id="projects">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Ключевые проекты</h2>
+          </div>
+          <div class="grid projects__grid" data-projects-list></div>
+        </div>
+      </section>
+
+      <section class="section section--events" id="events">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Календарь мероприятий</h2>
+          </div>
+          <div class="grid events__grid" data-events-list></div>
+        </div>
+      </section>
+
+      
+    </main>
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>
