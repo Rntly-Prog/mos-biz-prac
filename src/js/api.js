@@ -1,4 +1,4 @@
-const DEFAULT_API_URLS = ["api.json", "resources/api.json"];
+const DEFAULT_API_URLS = ["/api/v1/main-page"];
 const REQUEST_TIMEOUT_MS = 8000;
 
 const EVENT_TYPE_LABELS = {
@@ -21,7 +21,7 @@ const getApiCandidates = () => {
   const urls = [];
   const push = (value) => {
     const url = String(value || "").trim();
-    if (url) urls.push(url);
+    if (url) urls.push(upgradeHttp(url));
   };
 
   push(typeof window !== "undefined" ? window.APP_API_URL : "");
@@ -36,6 +36,35 @@ const getApiCandidates = () => {
   return unique(urls);
 };
 
+
+const normalizeApiResponse = (payload) => {
+  if (!payload || typeof payload !== "object") return null;
+
+  const hasMainKeys = (obj) =>
+    obj &&
+    (obj.header ||
+      obj.hero ||
+      obj.team ||
+      obj.projects ||
+      obj.events ||
+      obj.subordinate_structures ||
+      obj.footer);
+
+  if (hasMainKeys(payload)) return payload;
+
+  if (payload.data && typeof payload.data === "object") {
+    if (hasMainKeys(payload.data)) return payload.data;
+    if (payload.data.data && typeof payload.data.data === "object") {
+      if (hasMainKeys(payload.data.data)) return payload.data.data;
+    }
+  }
+
+  if (payload.result && typeof payload.result === "object") {
+    if (hasMainKeys(payload.result)) return payload.result;
+  }
+
+  return payload;
+};
 const fetchApiData = async (url) => {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
@@ -53,7 +82,8 @@ const fetchApiData = async (url) => {
       throw new Error(`API request failed: ${response.status}`);
     }
 
-    const data = await response.json();
+    const raw = await response.json();
+    const data = normalizeApiResponse(raw);
 
     if (!data || typeof data !== "object") {
       throw new Error("API response is not an object");
@@ -514,3 +544,7 @@ const initApi = async () => {
 };
 
 export default initApi;
+
+
+
+

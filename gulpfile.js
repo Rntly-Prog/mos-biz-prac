@@ -26,6 +26,46 @@ const webpackStream = require("webpack-stream");
 const plumber = require("gulp-plumber");
 const path = require("path");
 const zip = require("gulp-zip");
+const http = require("http");
+const https = require("https");
+const apiProxyTarget = "http://kurmanni.beget.tech";
+
+const createApiProxy = (target) => {
+  const targetUrl = new URL(target);
+  const client = targetUrl.protocol === "https:" ? https : http;
+
+  return (req, res, next) => {
+    if (!req.url.startsWith("/api/")) return next();
+
+    const options = {
+      protocol: targetUrl.protocol,
+      hostname: targetUrl.hostname,
+      port: targetUrl.port || (targetUrl.protocol === "https:" ? 443 : 80),
+      path: req.url,
+      method: req.method,
+      headers: { ...req.headers, host: targetUrl.host }
+    };
+
+    const proxyReq = client.request(options, (proxyRes) => {
+      res.writeHead(proxyRes.statusCode || 500, proxyRes.headers);
+      proxyRes.pipe(res, { end: true });
+    });
+
+    proxyReq.on("error", (error) => {
+      console.error("API proxy error:", error);
+      res.writeHead(502);
+      res.end("API proxy error");
+    });
+
+    if (req.method === "GET" || req.method === "HEAD") {
+      proxyReq.end();
+      return;
+    }
+
+    req.pipe(proxyReq, { end: true });
+  };
+};
+
 const rootFolder = path.basename(path.resolve());
 
 // paths
@@ -281,7 +321,8 @@ const htmlInclude = () => {
 const watchFiles = () => {
   browserSync.init({
     server: {
-      baseDir: `${buildFolder}`
+      baseDir: `${buildFolder}`,
+      middleware: [createApiProxy(apiProxyTarget)]
     }
   });
 
